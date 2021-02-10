@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import { DatePicker } from "jalali-react-datepicker";
+
 
 
 const NewCourse = (props) => {
@@ -16,12 +18,51 @@ const NewCourse = (props) => {
                 </h3>
                 <form>
                     <div className="row">
-                        <div className="col">
-                            <input type="text" className="form-control" placeholder="نام دوره"/>
+                        <div className="col-sm-6">
+                            <div className="form-group row">
+                                <label for="staticEmail" className="col-sm-2 col-form-label">نام دوره :</label>
+                                <div className="col-sm-10">
+                                    <input type="text" className="form-control" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="col">
-                            <input type="text" className="form-control" placeholder=""/>
+                        <div className="col-sm-6">
+                            <div className="form-group row">
+                                <label for="staticEmail" className="col-sm-2 col-form-label">زیرشاخه :</label>
+                                <div className="col-sm-10">
+                                    <input type="text" className="form-control" />
+                                </div>
+                            </div>
                         </div>
+                        <div className="col-sm-6">
+                            <div className="form-group row">
+                                <label for="staticEmail" className="col-sm-2 col-form-label">تاریخ شروع</label>
+                                <div className="col-sm-10">
+                                <DatePicker className="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="form-group row">
+                                <label for="staticEmail" className="col-sm-2 col-form-label">تاریخ اتمام</label>
+                                <div className="col-sm-10">
+                                <DatePicker className="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="form-group row">
+                                <label for="staticEmail" className="col-sm-2 col-form-label">مدرس</label>
+                                <div className="col-sm-10">
+                                    <input type="text" className="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="form-group row">
+                                
+                            </div>
+                        </div>  
                     </div>
                 </form>
             </div>

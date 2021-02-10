@@ -5,8 +5,6 @@ const NewUser = () => {
     return (
         <Fragment>
             <div className="container">
-
-
                 <h2 className="text-center m-20 mb-5 mt-5">افزودن کاربر</h2>
                 <form className="form-group">
                     <div className="row">
