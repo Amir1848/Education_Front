@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom'
 
 import Nav from './Nav';
+import UsersContainer from '../ManageUsers/UsersContainer';
 import SideBar from './SideBar';
 
 const Main = () => {
@@ -9,15 +10,13 @@ const Main = () => {
         <Fragment>
             <Nav />
             <SideBar />
-            <div class="content-wrapper">
+            <div className="content-wrapper">
 
-                <div class="content-header" style={{ backgroundColor: "white" }}>
-                    <div className="container">
-                        <Route path="/ManageUsers">
-                            {/* <SaleInvoice /> */}
-                        </Route>
-                    </div>
+                <div className="content-header" style={{ backgroundColor: "white" }}>
 
+                    <Route path="/ManageUsers">
+                        <UsersContainer />
+                    </Route>
                 </div>
             </div>
 

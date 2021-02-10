@@ -24,8 +24,8 @@ const SideBar = () => {
 
 
                                 <li className="nav-item has-treeview">
-                                    <Link href="/ManageUsers" className="nav-link">
-                                        <i class="nav-icon fa fa-user"></i>
+                                    <Link to="/ManageUsers" className="nav-link">
+                                        <i className="nav-icon fa fa-user"></i>
                                         <p>
                                             مدیریت کاربران
                                         </p>
