@@ -1,4 +1,5 @@
-import React,{Fragment} from 'react';
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const SideBar = () => {
@@ -23,12 +24,12 @@ const SideBar = () => {
 
 
                                 <li className="nav-item has-treeview">
-                                    <a href="/SaleInvoice" className="nav-link">
+                                    <Link href="/ManageUsers" className="nav-link">
                                         <i class="nav-icon fa fa-user"></i>
                                         <p>
                                             مدیریت کاربران
-                                    </p>
-                                    </a>
+                                        </p>
+                                    </Link>
                                 </li>
                             </ul>
                         </nav>
