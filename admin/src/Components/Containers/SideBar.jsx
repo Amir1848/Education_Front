@@ -31,6 +31,24 @@ const SideBar = () => {
                                         </p>
                                     </Link>
                                 </li>
+
+                                <li className="nav-item has-treeview">
+                                    <Link to="/ManageCourses" className="nav-link">
+                                        <i className="nav-icon fa fa-graduation-cap"></i>
+                                        <p>
+                                            مدیریت کلاس ها
+                                        </p>
+                                    </Link>
+                                </li>
+
+                                <li className="nav-item has-treeview">
+                                    <Link to="/ManageGroups" className="nav-link">
+                                        <i className="nav-icon fa fa-book"></i>
+                                        <p>
+                                            مدیریت گروه ها
+                                        </p>
+                                    </Link>
+                                </li>                                
                             </ul>
                         </nav>
 
