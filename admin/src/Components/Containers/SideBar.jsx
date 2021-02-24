@@ -5,39 +5,42 @@ import { Link } from 'react-router-dom';
 const SideBar = () => {
     return (
         <Fragment>
-            <aside className="main-sidebar sidebar-dark-primary elevation-4">
-
-                <a href="index3.html" className="brand-link">
-                    <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3"
-                        style={{ opacity: .8 }} />
-                    <span className="brand-text font-weight-light">پنل مدیریت</span>
-                </a>
-
-
-                <div className="sidebar" style={{ direction: "ltr" }}>
-                    <div style={{ direction: "rtl" }}>
-
-
-
-                        <nav className="mt-2">
-                            <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-
-                                <li className="nav-item has-treeview">
-                                    <Link to="/ManageUsers" className="nav-link">
-                                        <i className="nav-icon fa fa-user"></i>
-                                        <p>
-                                            مدیریت کاربران
-                                        </p>
-                                    </Link>
-                                </li>
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-profile">
+                        <a href="#" class="nav-link">
+                            <div class="nav-profile-image">
+                                <img src="assets/images/faces/face1.jpg" alt="profile" />
+                                <span class="login-status online"></span>
+                            </div>
+                            <div class="nav-profile-text d-flex flex-column">
+                                <span class="font-weight-bold mb-2">David Grey. H</span>
+                                <span class="text-secondary text-small">Project Manager</span>
+                            </div>
+                            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="mdi mdi-home menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                            <i class="menu-arrow"></i>
+                            <span class="menu-title">Basic UI Elements</span>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item" dir="rtl"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                                <li class="nav-item" dir="rtl"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
                             </ul>
-                        </nav>
-
-                    </div>
-                </div>
-
-            </aside>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </Fragment>
 
     );
