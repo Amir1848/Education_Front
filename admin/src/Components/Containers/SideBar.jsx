@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
+﻿import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 
 const SideBar = () => {
     return (
         <Fragment>
+
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item nav-profile">

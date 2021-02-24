@@ -8,7 +8,7 @@ import NewUser from './NewUser';
 const UsersContainer = () => {
 
 
-    const [ModalOpen, setModal] = useState(false);
+    const [ModalOpen, setModal] = useState(false);  
 
 
 
