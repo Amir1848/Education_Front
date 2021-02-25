@@ -13083,11 +13083,11 @@ dl {
       .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link.dropdown-toggle:after {
         line-height: 2; }
       @media (min-width: 992px) {
-        .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
-          margin-left: auto; }
-          .rtl .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
-            margin-left: 0;
-            margin-right: auto; } }
+        .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-left {
+          margin-right: auto; }
+          .rtl .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-left {
+            margin-right: 0;
+            margin-left: auto; } }
 
 @media (max-width: 991px) {
   .navbar {
@@ -13309,7 +13309,8 @@ dl {
         .sidebar .nav .nav-item .nav-link .menu-title {
           color: inherit;
           display: inline-block;
-          font-size: 0.875rem;
+          font-family: "bnazanin";
+          font-size: large;
           line-height: 1;
           vertical-align: middle; }
         .sidebar .nav .nav-item .nav-link .badge {
@@ -13321,7 +13322,10 @@ dl {
         background: #ffffff; }
         .sidebar .nav .nav-item.active > .nav-link .menu-title {
           color: #b66dff;
-          font-family: "ubuntu-medium", sans-serif; }
+          font-family: "bnazanin", sans-serif;
+          font-weight: bold;
+          font-size: large;
+        }
         .sidebar .nav .nav-item.active > .nav-link i {
           color: #b66dff; }
       .sidebar .nav .nav-item:hover {
@@ -13577,3 +13581,46 @@ dl {
   flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */
+
+/*////////////////////////////////////////////////////// */
+
+.newspanel{
+   direction: rtl !important;
+   text-align: right;
+   padding: 20px 30px;
+   font-size: 20px;
+}
+
+.NewsList{
+  font-size: large;
+}
+
+.bnazanin{
+  font-family: "bnazanin";
+}
+
+.iransans{
+  font-family: "iransans";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'bnazanin';
+  src: url('../../fonts/B-NAZANIN.TTF');
+}
+@font-face {
+  font-family: 'iransans';
+  src: url('../../fonts/IranianSans.ttf');
+}
