@@ -6,40 +6,39 @@ const SideBar = () => {
     return (
         <Fragment>
 
-            <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                <ul class="nav">
-                    <li class="nav-item nav-profile">
-                        <a href="#" class="nav-link">
-                            <div class="nav-profile-image">
+            <nav className="sidebar sidebar-offcanvas" id="sidebar">
+                <ul className="nav">
+                    <li className="nav-item nav-profile" dir="rtl">
+                        <a href="#" className="nav-link">
+                            <div className="nav-profile-image">
                                 <img src="assets/images/faces/face1.jpg" alt="profile" />
-                                <span class="login-status online"></span>
                             </div>
-                            <div class="nav-profile-text d-flex flex-column">
-                                <span class="font-weight-bold mb-2">David Grey. H</span>
-                                <span class="text-secondary text-small">Project Manager</span>
+                            <div className="nav-profile-text d-flex flex-column">
+                                <span className="font-weight-bold mb-2 bnazanin" style={{ marginRight: "20px", fontSize: "18px" }}>امیر حصاری</span>
                             </div>
-                            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                            <i className="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="mdi mdi-home menu-icon"></i>
-                            <span class="menu-title">Dashboard</span>
+                    <li className="nav-item">
+                        <a className="nav-link" href="index.html">
+                            <i className="mdi mdi-home menu-icon"></i>
+                            <span className="menu-title">میزکار</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-                            <i class="menu-arrow"></i>
-                            <span class="menu-title">Basic UI Elements</span>
+                    <li className="nav-item">
+                        <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                            <i className="mdi mdi-bank menu-icon"></i>
+                            <i className="menu-arrow"></i>
+                            <span className="menu-title">مدیریت کلاس ها</span>
                         </a>
-                        <div class="collapse" id="ui-basic">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item" dir="rtl"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                                <li class="nav-item" dir="rtl"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                        <div className="collapse" id="ui-basic">
+                            <ul className="nav flex-column sub-menu">
+                                <li className="nav-item" dir="rtl" style={{ fontFamily: "bnazanin !important" }}> <a className="nav-link" href="pages/ui-features/buttons.html">مدیریت دسته بندی ها</a></li>
+                                <li className="nav-item" dir="rtl" style={{ fontFamily: "bnazanin !important" }}> <a className="nav-link" href="pages/ui-features/typography.html">مدیریت دوره ها</a></li>
                             </ul>
                         </div>
                     </li>
+
                 </ul>
             </nav>
         </Fragment>

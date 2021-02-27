@@ -1,12 +1,9 @@
 import React, { Fragment } from 'react';
-import { Route } from 'react-router-dom'
+import { Route } from 'react-router-dom';
 
 import Nav from './Nav';
 import MainWindow from './MainWindow'
-import UsersContainer from '../ManageUsers/UsersContainer';
 import SideBar from './SideBar';
-import GroupsContainer from './../ManageGroups/GroupsContainer';
-import CourseContainer from '../ManageCourses/CourseContainer';
 
 const Main = () => {
     return (

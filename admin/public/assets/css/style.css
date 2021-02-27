@@ -13596,11 +13596,11 @@ dl {
 }
 
 .bnazanin{
-  font-family: "bnazanin";
+  font-family: "bnazanin" !important;
 }
 
 .iransans{
-  font-family: "iransans";
+  font-family: "iransans" !important;
 }
 
 
@@ -13617,7 +13617,7 @@ dl {
 
 
 @font-face {
-  font-family: 'bnazanin';
+  font-family: 'bnazanin' ;
   src: url('../../fonts/B-NAZANIN.TTF');
 }
 @font-face {
