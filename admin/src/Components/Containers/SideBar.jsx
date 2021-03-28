@@ -5,13 +5,12 @@ import { Link } from 'react-router-dom';
 const SideBar = () => {
     return (
         <Fragment>
-
             <nav className="sidebar sidebar-offcanvas" id="sidebar">
                 <ul className="nav">
                     <li className="nav-item nav-profile" dir="rtl">
                         <a href="#" className="nav-link">
                             <div className="nav-profile-image">
-                                <img src="assets/images/faces/face1.jpg" alt="profile" />
+                                <img src="/assets/images/faces/face1.jpg" alt="profile" />
                             </div>
                             <div className="nav-profile-text d-flex flex-column">
                                 <span className="font-weight-bold mb-2 bnazanin" style={{ marginRight: "20px", fontSize: "18px" }}>امیر حصاری</span>
@@ -33,12 +32,16 @@ const SideBar = () => {
                         </a>
                         <div className="collapse" id="ui-basic">
                             <ul className="nav flex-column sub-menu">
-                                <li className="nav-item" dir="rtl" style={{ fontFamily: "bnazanin !important" }}> <a className="nav-link" href="pages/ui-features/buttons.html">مدیریت دسته بندی ها</a></li>
-                                <li className="nav-item" dir="rtl" style={{ fontFamily: "bnazanin !important" }}> <a className="nav-link" href="pages/ui-features/typography.html">مدیریت دوره ها</a></li>
+                                <li className="nav-item" dir="rtl" style={{ fontFamily : "bnazanin" }}>
+                                    <Link className="nav-link" to="/Groups/ManageGroups">
+                                        مدیریت دسته بندی ها
+                                    </Link>
+                                    {/* <a className="nav-link" href="pages/ui-features/buttons.html">مدیریت دسته بندی ها</a> */}
+                                </li>
+                                <li className="nav-item" dir="rtl" style={{ fontFamily : "bnazanin" }}> <a className="nav-link" href="pages/ui-features/typography.html">مدیریت دوره ها</a></li>
                             </ul>
-                        </div>
+                        </div>  
                     </li>
-
                 </ul>
             </nav>
         </Fragment>

@@ -13,7 +13,7 @@ const Main = () => {
             <div className="container-fluid page-body-wrapper">
                 <MainWindow />
                 <SideBar />
-
+                
             </div>
         </Fragment>
     );

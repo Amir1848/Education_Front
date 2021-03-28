@@ -10583,6 +10583,7 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
+  direction: rtl !important;    
   -ms-flex-align: stretch;
   align-items: stretch;
   -webkit-box-pack: stretch;
@@ -12094,6 +12095,8 @@ code {
       padding-top: 1rem; }
   .card .card-title {
     color: #343a40;
+    direction: rtl;
+    text-align: right;
     margin-bottom: 0.75rem;
     text-transform: capitalize;
     font-family: "ubuntu-medium", sans-serif;
@@ -12105,6 +12108,8 @@ code {
   .card .card-description {
     color: #76838f;
     margin-bottom: 1.5rem;
+    direction: rtl;
+    text-align: right;
     font-family: "ubuntu-regular", sans-serif; }
   .card.card-outline-success {
     border: 1px solid #1bcfb4; }
@@ -13601,6 +13606,10 @@ dl {
 
 .iransans{
   font-family: "iransans" !important;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 
