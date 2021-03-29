@@ -3262,7 +3262,9 @@ pre {
 .table-borderless thead th,
 .table-borderless tbody + tbody {
   border: 0; }
-
+.table-responsive {
+  display: table;
+}
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: #f2edf3; }
 

@@ -5,7 +5,7 @@ import ManageGroups from './../Course/ManageGroups';
 const MainWindow = () => {
     return (
         <Fragment>
-            <div class="main-panel">
+            <div className="main-panel">
                 <div className="content-wrapper">
                     <Switch>
                         <Route path="/Groups/ManageGroups" exact>
