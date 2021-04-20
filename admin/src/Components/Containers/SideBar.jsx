@@ -19,10 +19,10 @@ const SideBar = () => {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="index.html">
+                        <Link className="nav-link" to="/">
                             <i className="mdi mdi-home menu-icon"></i>
                             <span className="menu-title">میزکار</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -41,6 +41,12 @@ const SideBar = () => {
                                 <li className="nav-item" dir="rtl" style={{ fontFamily : "bnazanin" }}> <a className="nav-link" href="pages/ui-features/typography.html">مدیریت دوره ها</a></li>
                             </ul>
                         </div>  
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Users/ManageUsers">
+                            <i className="mdi mdi-account-card-details menu-icon"></i>
+                            <span className="menu-title">مدیریت کاربران</span>
+                        </Link>
                     </li>
                 </ul>
             </nav>

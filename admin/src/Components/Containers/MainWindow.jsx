@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router';
+
+import UsersContainer from './../ManageUsers/UsersContainer';
 import ManageGroups from './../Course/ManageGroups';
 
 const MainWindow = () => {
@@ -10,6 +12,9 @@ const MainWindow = () => {
                     <Switch>
                         <Route path="/Groups/ManageGroups" exact>
                             <ManageGroups />
+                        </Route>
+                        <Route path="/Users/ManageUsers" exact>
+                            <UsersContainer />
                         </Route>
                     </Switch>
                 </div>

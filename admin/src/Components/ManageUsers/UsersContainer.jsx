@@ -32,27 +32,34 @@ const UsersContainer = () => {
     Modal.setAppElement("body");
     return (
         <Fragment>
-            <Helmet>
-                <title>مدیریت کاربران</title>
-            </Helmet>
+        <div className="col-lg-12 grid-margin stretch-card bnazanin">
+            <div className="card">
+                <div className="card-body" style={{ textAlign: "right" }}>
+                    <h1 className="card-title bnazanin bold">جدول کاربران                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </h1>
+                    <button className="btn btn-gradient-primary bnazanin bold mb-3">
+                        افزودن دسته بندی +
+                    </button>                         
+                    <div className="table-responsive">                                                                           
+                        <table className="table table-striped" style={{ textAlign: "right" }}>
+                            <thead className="bnazanin">
+                                <tr>
+                                    <th className="bnazanin bold"> <b>نام کامل</b> </th>
+                                    <th className="bnazanin bold"> <b>نام کاربری</b> </th>
+                                    <th className="bnazanin bold"> <b>شماره تلفن همراه</b> </th>
+                                    <th className="bnazanin bold"> <b>#</b> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
 
-            
-            <UsersTable newUser={setModal} />
-            <Modal
-                isOpen={ModalOpen}
-                style={customStyles}
-                contentLabel="Users Modal"
-            >
-                <div className="close-modal bg-dark">
-                    <div className="container-fluid">
-                        <button className="btn btn-sm btn-dark" onClick={() => setModal(false)}>
-                            X
-                        </button>
                     </div>
                 </div>
-                <NewUser />
-            </Modal>
-        </Fragment>
+            </div>
+        </div>
+     
+    </Fragment>
     );
 }
 
